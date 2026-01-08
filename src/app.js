@@ -6,6 +6,7 @@ const middleware = require('./middleware/auth.middleware');
 
 app.use(express.json());
 app.use('/auth', require('./router/auth.route'));
+app.use('/tasks', require('./router/task.route'));
 
 app.get("/", (req, res) => {
     res.send("Backend is working!");
