@@ -1,0 +1,28 @@
+{
+  "name": "postman_testing_backend",
+  "version": "1.0.0",
+  "description": "\"# postman_testing_backend\" \r \"# postman_testing_backend\" \r \"# postman_testing_backend\"",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node src/app.js",
+    "dev" : "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicohbgt/postman_testing_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nicohbgt/postman_testing_backend/issues"
+  },
+  "homepage": "https://github.com/nicohbgt/postman_testing_backend#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
