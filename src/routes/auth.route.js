@@ -1,6 +1,3 @@
-const users = [];
-module.exports = users;
-
 const express = require('express');
 const router = express.router();
 const authContoller = require('../controllers/auth.controller');
