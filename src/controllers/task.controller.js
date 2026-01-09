@@ -1,4 +1,4 @@
-const tasks = require('../data/task.user');
+const tasks = require('../data/task.users');
 
 // CREATE TASK
 exports.createTask = (req, res) => {

@@ -1,4 +1,4 @@
-const users = require('../data/users');
+const users = require("../data/users");
 
 // REGISTER
 exports.register = (req, res) => {
