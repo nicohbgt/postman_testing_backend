@@ -1,8 +1,8 @@
 {
   "name": "postman_testing_backend",
   "version": "1.0.0",
-  "description": "\"# postman_testing_backend\" \r \"# postman_testing_backend\" \r \"# postman_testing_backend\"",
-  "main": "index.js",
+  "description": "Simple Express backend for Postman automation testing",
+  "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
