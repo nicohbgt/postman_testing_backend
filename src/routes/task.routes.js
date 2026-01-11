@@ -1,12 +1,13 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const taskController = require('../controllers/task.controller');
-const authMiddleware = require('../middleware/auth.middleware');
+
+const taskController = require("../controllers/task.controller");
+const authMiddleware = require("../middleware/auth.middleware");
 
 router.use(authMiddleware);
 
+router.get("/", taskController.getTasks);
 router.post("/", taskController.createTask);
-router.get("/", taskController.getTask);
 router.put("/:id", taskController.updateTask);
 router.delete("/:id", taskController.deleteTask);
 
