@@ -1,11 +1,18 @@
 const tasks = require("../data/tasks");
 
-// CREATE
 exports.createTask = (req, res) => {
+  if (!req.body) {
+    return res.status(400).json({
+      message: "Request body is required"
+    });
+  }
+
   const { title } = req.body;
 
   if (!title) {
-    return res.status(400).json({ message: "Title is required" });
+    return res.status(400).json({
+      message: "Title is required"
+    });
   }
 
   const newTask = {
@@ -22,12 +29,14 @@ exports.createTask = (req, res) => {
   });
 };
 
+
 // READ
 exports.getTasks = (req, res) => {
   res.status(200).json({
     data: tasks
   });
 };
+
 
 // UPDATE
 exports.updateTask = (req, res) => {
